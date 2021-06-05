@@ -1,0 +1,49 @@
+
+body{
+    font-family: 'Odibee Sans';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+}
+h1{
+    font-size: 50px;
+}
+.container{
+    width: 80vw;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.active{
+     width:60%;
+}
+input{
+    padding: 12px;
+    background-color: gainsboro;
+    border: 0;
+    width:0px;
+    transition: width 0.3s ease-in-out;
+}
+input:focus{
+    outline: none;
+}
+.btn{
+    border: 0;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    left: 80%;
+    background-color: gainsboro;
+    transition: all 0.3s ease-in-out;
+}
+.btnh{
+    position: absolute;
+    top: 0%;
+    left: 48%;
+}
