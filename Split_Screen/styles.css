@@ -1,0 +1,138 @@
+
+:root{
+    --left: ;
+}
+
+body{
+    font-family: 'Odibee Sans';
+    
+    margin:0;
+    overflow:hidden;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    flex-direction: row;
+    
+}
+.split{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    transition: all 0.1 ease-in-out;
+}
+.split.left::before,.split.right::before,.split.left,.split.right{
+    transition: all 0.4s ease-in-out;
+}
+.split.left::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(230,200,84, 0.2);
+}
+.split.right::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(50,170,200, 0.3);
+}
+.split.left{
+    left: 0%;
+    background-color: aqua;
+    background: url('images/img (1).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.split.right{
+    right: 0%;
+    background-color: bisque;
+    background: url('images/img (2).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.left h1{
+    position: absolute;
+    color: khaki;
+    top:15%;
+    font-size: 60px;
+}
+.right h1{
+    position: absolute;
+    color:lightblue;
+    top:15%;
+    font-size: 60px;
+}
+.btn{
+    position: absolute;
+    top:35%;
+    border: #fff solid 0.15rem;
+    text-decoration: none;
+    height: 35px;
+    width: 60px;
+    background-color: rgba(230,200,84, 0.0);
+    color: #fff;
+    /* background-color: gainsboro; */
+    transition: all 0.3s ease-in-out;
+}
+.btn.left:hover{
+    height: 40px;
+    width: 66px;
+    background-color: rgba(230,200,84, 0.1);
+}
+.btn.right:hover{
+    height: 40px;
+    width: 66px;
+    background-color: rgba(50,170,200, 0.15);
+}
+img{
+    height: 50%;
+    width: 50%;
+    position: relative;
+}
+.expand{
+    width: 75%;
+}
+.shrink{
+    width: 25%;
+}
+/*
+
+img{
+    height: 50%;
+    width: 50%;
+    position: relative;
+}
+.container{
+    width: 80vw;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    
+}
+.btn{
+    border: 0;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background-color: gainsboro;
+    transition: all 0.3s ease-in-out;
+}
+.split{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.split.left{
+    background-color: aqua;
+}
+.split.right{
+    background-color: bisque;
+}
+*/
