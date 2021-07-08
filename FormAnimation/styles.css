@@ -1,0 +1,88 @@
+
+
+
+body{
+    font-family: 'Odibee Sans';
+    background-color: rgb(211, 154, 80);
+    color: white;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    overflow:hidden;
+}
+.container{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    background-color: rgba(0,0,0,0.1);
+    justify-content: center;
+    /* gap: 20px; */
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.container a{
+    color: rgb(221, 194, 160);
+}
+form{
+    position: relative;
+    margin: 20px 0px 40px;
+    width: 250px;
+    
+}
+form input{
+    border: 0;
+    background-color: transparent;
+    border-bottom: white solid 2px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: inherit;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color: white;
+    /* font-size: 20px; */
+}
+.btn{
+    border: 0px;
+    height: 30px;
+    width: 100%;
+    cursor: pointer;
+    color: rgb(240, 159, 10);
+}
+.btn:hover{
+    transform: scale(1.02);
+}
+.btn:active{
+    transform:scale(0.98);
+}
+
+form input:focus, 
+form input:valid{
+    outline:0px;
+}
+.control{
+    position: relative;
+    margin-right:30px ;
+}
+.control label{
+    position: absolute;
+    top: 10px;
+    z-index: -1;
+    transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.05s;
+}
+
+span{
+    display: inline-block;
+    min-width:5px;
+    
+}
+form input:focus + label , 
+form input:valid + label {
+    color:khaki;
+    transform: translateY(-25px);
+}
