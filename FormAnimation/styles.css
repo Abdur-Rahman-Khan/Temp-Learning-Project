@@ -1,6 +1,5 @@
 
 
-
 body{
     font-family: 'Odibee Sans';
     background-color: rgb(211, 154, 80);
@@ -22,8 +21,8 @@ body{
     /* gap: 20px; */
     align-items: center;
     flex-direction: column;
-    
-    
+
+
 }
 .container a{
     color: rgb(221, 194, 160);
@@ -32,7 +31,7 @@ form{
     position: relative;
     margin: 20px 0px 40px;
     width: 250px;
-    
+
 }
 form input{
     border: 0;
@@ -73,16 +72,16 @@ form input:valid{
     position: absolute;
     top: 10px;
     z-index: -1;
-    transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.05s;
+    
 }
 
 span{
     display: inline-block;
     min-width:5px;
-    
+    transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-form input:focus + label , 
-form input:valid + label {
+form input:focus + label span, 
+form input:valid + label span {
     color:khaki;
     transform: translateY(-25px);
-}
+} 

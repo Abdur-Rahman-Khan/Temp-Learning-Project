@@ -1,7 +1,11 @@
-// label=document.querySelectorAll('label');
-// label.forEach((x)=>{
-//     console.log(x.textContent);
-//     y=x.textContent.split('').map((z)=>{return `<span>${z}</apan>`}).join('');
-//     console.log(y);
-//    x.innerHTML=y;
-// })
+const label=document.querySelectorAll('label');
+label.forEach((x)=>{
+    y=x.textContent
+        .split('')
+        .map((z,i)=>`<span style="transition-delay:${i * 50}ms">${z}</span>`)
+        .join('');
+    
+    x.innerHTML=y;
+   // console.log(x)
+})
+
