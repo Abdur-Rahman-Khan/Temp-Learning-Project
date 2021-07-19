@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form-Validator</title>
+</head>
+
+<body>
+    <div class="container">
+       <form action="" class="form">
+           <div class="form-box register">
+                <h2>Register with us!</h2>
+           </div>
+           <div class="form-box username">
+               <h4>Username</h4>
+               <input type="text" name="" id="inp_username" placeholder="Enter Username" required >
+               <h5 class="hid1_username hid">Username must be of atleast 3 characters!</h5>
+           </div>
+           <div class="form-box email">
+               <h4>Email</h4>
+               <input type="text" name="" id="inp_email" placeholder="Enter Email" required>
+               <h5 class="hid1_email hid">Email must be of valid type!</h5>
+            </div>
+           <div class="form-box password">
+               <h4>Password</h4>
+               <input type="password" name="" id="inp_password" placeholder="Enter Password" required>
+               <h5 class="hid1_password hid">Password field must be 6 characters long</h5>
+           </div>
+           <div class="form-box repassword">
+                <h4>Confirm Password</h4>
+                <input type="password" name="" id="inp_repassword" placeholder="Enter Password again" required>
+                <h5 class="hid1_confirmPassword hid">Password didn't match!</h5>
+           </div>
+
+           <div class="btn-div">
+                <button class="btn submit">
+                    Submit
+                 </button>
+           </div>
+          
+       </form>
+    </div>
+   <script src="index.js"></script>
+</body>
+</html>
