@@ -1,0 +1,84 @@
+
+
+body{
+    font-family:  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    height: 100vh;
+    background-color: rgb(39, 38, 38);
+
+    color: honeydew;
+}
+button{
+    border: 0;
+    padding: 5px;
+    width: 8%;
+    font-size: 15px;
+    color: lavender;
+    cursor: pointer;
+    border-radius:5px ;
+    background-color: rgb(97, 97, 108);
+    transition: all 0.15s ease-in-out;
+}
+button:hover{
+    opacity: 0.9;
+    transform: scale(1.06);
+}
+button:active{
+    transform: scale(0.95);
+}
+
+h2{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+video{
+    width: 80%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/* Classes */
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* height: 100vh; */
+    width: 100vw;
+    padding: 30px;
+    perspective: 1000px;
+    padding-bottom: 0%;
+    
+}
+
+.control{
+    /* position: absolute; */
+    top: 66%;
+    width:82%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 1%;
+    /* background-color: blueviolet; */
+    background-color: rgb(204, 180, 180);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+#slider{
+    width: 62%;
+}
+.hidden{
+    display: none;
+}
+/* Media Query */
+@media (min-width:800px){
+}

@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
-
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+      <link rel="stylesheet" href="styles.css">
         <title>Movie Book</title>
 </head>
 <body>
    <div class="container">
-       <video  width="500" poster="img/armchair.png">
+    <h2>A Short Film</h2>
+       <video controls  poster="img/screen.png">
            <source src="videos/temp.mp4" type="video/mp4">
            <!-- <source src="temp.mp4"> -->
            Your Browser don't support embedded videos.
        </video>
-       <div class="control">
-           <button class="btn back5">B</button>
-           <button class="btn play">P</button>
-           <button class="btn for5">F</button>
-           <input type="range" name="slider" id="slider">
-       </div>
+      
    </div>
+   <div class="control">
+         <button class="btn back5"><i class="fa fa-backward" aria-hidden="true"></i></button>
+      <button class="btn play"><i class="fa fa-play" aria-hidden="true"></i><i class="fa fa-pause hidden" aria-hidden="true"></i>
+      </button>
+      <button class="btn for5"><i class="fa fa-forward" aria-hidden="true"></i>
+      </button>
+      <input class="slider" type="range" name="slider" id="slider" min="0" max="100" step="0.1" value="0">
+      <span>00:00</span>
+    </div>
+<div style="height: 300px;"></div>
+
 </html>
